@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>lwileczek3 - scatterplot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <script src="../lib/d3.v5.min.js"></script> 
+    <style>
+    path {
+        fill: none;
+        stroke-width: 1;
+    }
+
+    path.bad {
+        stroke: red;
+    }
+
+    path.good {
+        stroke: blue;
+    }
+    text {
+        font-family: sans-serif;
+        font-size: 11px;
+    }
+
+    .grid {
+        stroke: #DDD;
+        stroke-opacity: 0.3;
+        stroke-width: 1;
+        stroke-dasharray: 8 4 3 4;
+    }
+    .pagebreak { page-break-before: always; }
+    </style>
+  </head>
+  <body>
+    <svg id="first"></svg>
+    <br>
+    <div class="pagebreak"></div>
+    <svg id="second"></svg>
+    <br>
+    <div class="pagebreak"></div>
+    <svg id="third"></svg>
+    <br>
+    <div class="pagebreak"></div>
+    <svg id="fourth"></svg>
+    <br>
+    <div class="pagebreak"></div>
+    <svg id="fifth"></svg>
+    <script src="./scatterplot.js"></script>
+  </body>
+</html>

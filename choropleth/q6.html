@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>lwileczek3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <script src="../lib/d3.v5.min.js"></script> 
+    <script src="../lib/topojson.v2.min.js"></script> 
+    <script src="../lib/d3-tip.min.js"></script> 
+    <style>
+    text {
+        font-size: 14px;
+        fill: #444;
+    }
+    #container {
+        width: 99vw;
+        height: 99vh;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .counties {
+        fill: none;
+    }
+    .counties path:hover {
+        stroke: #E90;
+        stroke-width: 3;
+    }
+    .states {
+        fill: none;
+        stroke: #fff;
+        stroke-linejoin: round;
+    }
+    .d3-tip {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #FFF;
+        font-family: sans-serif;
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 3px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <!-- JS below -->
+    <script src="./q6.js"></script>
+  </body>
+</html>
